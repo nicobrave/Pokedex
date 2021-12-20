@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<header class="text-center pt-5 bg-secondary">
+    <div class="text-center pb-4">
+        <div class="text-center">
+            <h1 class="titulo_poke"> <img src="assets/img/pokeapi_256.png"  alt="pokeapi_256.logo"> </h1>
+        </div>
+        <p class="lead text-white m-auto font-weight-bold pt-2">Una pokedex online</p>
+    </div>
+</header>
+
+<body>
+    <section class="pt-5 pb-4 bg-warning">
+
+        <form>
+
+            <div class="row w-50 m-auto">
+
+                <div class="col-12 col-sm-6 pb-3">
+                    <label> Ingrese el nombre o id del pokemon:</label>
+                </div>
+
+                <div class="col-12 col-sm-6 pb-3">
+                    <input class="form-control" id="pokemon_input">
+                </div>
+
+            </div>
+
+            <button class="btn btn-primary mx-auto d-block my-3">Consultar</button>
+
+        </form>
+    </section>
+
+    <section class="pt-5 bg-white">
+        <div class="row container">
+
+            <div class="col-12 col-sm-6" id="pokeInfo"> </div>
+            <div class="col-12 col-sm-6" id="pokeStats" style="height: 300px; width: auto;"></div>
+        </div>
+
+
+    </section>
+
+</body>
+<footer class="bg-warning text-center font-weight-bold text-primary pt-2 pb-2 shadow-sm"> Online Pokedex</footer>
+
+</html>
